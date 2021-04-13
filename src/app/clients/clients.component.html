@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="body">
+    <mat-card class="first-card">
+      <mat-card-content>
+        <section>
+          <h3>Potato Fla$h Online</h3>
+          <mat-form-field>
+            <input matInput placeholder="First Name" [(ngModel)]="name">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Age" type="number" [(ngModel)]="age">
+          </mat-form-field>
+          <button mat-mini-fab color="primary" (click)="save()">
+            <mat-icon>check</mat-icon>
+          </button>
+        </section>
+      </mat-card-content>
+      <mat-card-actions>
+        <app-item-client
+          *ngFor="let c of clients; let i=index"
+          [client]="c"
+          [removeClient]="deleteClient(i)"
+          [updateClient]="updateClient(c,i)"></app-item-client>
+      </mat-card-actions>
+    </mat-card>
+    <br><br>
+  </div>
+</body>
+
+</html>

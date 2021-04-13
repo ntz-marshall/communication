@@ -1,0 +1,20 @@
+.body{
+    background-color: rgb(233, 164, 216);
+    padding: 50px;
+}
+
+.first-card {
+    background-color: rgb(248, 248, 248);
+    width: 50%;
+    margin-left: 25%;
+}
+
+mat-card {
+    padding: 40px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

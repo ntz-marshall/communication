@@ -1,0 +1,14 @@
+.first-card {
+    width: 75%;
+    margin-left: 10%;
+}
+
+mat-card {
+    padding: 40px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
