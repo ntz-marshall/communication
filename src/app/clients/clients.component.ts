@@ -29,7 +29,7 @@ export class ClientsComponent implements OnInit {
     this.clients.splice(i, 1);
   }
 
-  updateClient(c: Client, i: any) {
+  updateClient(c: Client,i: any) {
     this.clients[i].name = c.name;
     this.clients[i].age = c.age;
   }

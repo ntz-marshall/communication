@@ -12,6 +12,10 @@ import { ChildItemComponent } from './event/child-item/child-item.component';
 import { ClientsComponent } from './clients/clients.component';
 import { FormsModule } from '@angular/forms';
 import { ItemClientComponent } from './clients/item-client/item-client.component';
+import { ParentChildComponent } from './parent-child/parent-child.component';
+import { TimerComponent } from './parent-child/timer/timer.component';
+import { OnChangesComponent } from './on-changes/on-changes.component';
+import { NameChangesComponent } from './on-changes/name-changes/name-changes.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { ItemClientComponent } from './clients/item-client/item-client.component
     EventComponent,
     ChildItemComponent,
     ClientsComponent,
-    ItemClientComponent
+    ItemClientComponent,
+    ParentChildComponent,
+    TimerComponent,
+    OnChangesComponent,
+    NameChangesComponent
   ],
   imports: [
     BrowserModule,
@@ -31,10 +39,6 @@ import { ItemClientComponent } from './clients/item-client/item-client.component
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA,
-    NO_ERRORS_SCHEMA
-  ]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

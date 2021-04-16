@@ -1,1 +1,7 @@
-<p>timer works!</p>
+<mat-card>
+    <mat-card-content>
+        <p>Second: {{ round(miliseconds / 1000) }}</p>
+        <p>Milisecond: {{ miliseconds % 1000 }}</p>
+        <mat-progress-bar mode="indeterminate" *ngIf="running"></mat-progress-bar>
+    </mat-card-content>
+</mat-card>
